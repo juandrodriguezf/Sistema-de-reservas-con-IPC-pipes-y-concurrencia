@@ -1,0 +1,114 @@
+# --- Compilación y binarios ---
+bin/
+build/
+out/
+dist/
+*.o
+*.a
+*.so
+*.lo
+*.la
+*.exe
+*.dll
+*.dylib
+*.out
+*.i
+*.s
+
+# Nombres típicos de los ejecutables de este proyecto (por si se compilan en la raíz)
+/controlador
+/agente
+
+# CMake (por si se usa más adelante)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+_deps/
+*.cmake
+!CMakeLists.txt
+
+# --- Depuración y volcados ---
+core
+core.*
+vgcore.*
+*.stackdump
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# --- Cobertura y análisis ---
+*.gcno
+*.gcda
+*.gcov
+*.prof
+
+# --- Artefactos en tiempo de ejecución (FIFOs / pipes nominales) ---
+# Respuestas por agente (patrón usado en agente.c)
+pipe_*_resp
+
+# --- Entornos, secretos y credenciales ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_ed25519
+*_rsa
+*_ed25519
+*.secret
+secrets/
+credentials/
+*.credentials
+.netrc
+.npmrc
+auth.json
+token.txt
+*.token
+
+# --- Logs (pueden contener rutas, usuarios o datos sensibles) ---
+*.log
+logs/
+
+# --- Editores e IDEs ---
+.idea/
+.vscode/
+*.code-workspace
+.fleet/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# --- Sistema operativo ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Python / Node (por si hay scripts auxiliares en el repo) ---
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+env/
+node_modules/
+.npm/
+
+# --- Empaquetado y temporales ---
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+.cache/

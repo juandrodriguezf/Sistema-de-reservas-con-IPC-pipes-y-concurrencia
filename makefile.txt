@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -pthread -Iinclude
+
+BIN = bin
+SRC = src
+
+all: controlador agente
+
+controlador: $(SRC)/controlador.c
+	$(CC) $(CFLAGS) $(SRC)/controlador.c -o $(BIN)/controlador
+
+agente: $(SRC)/agente.c
+	$(CC) $(CFLAGS) $(SRC)/agente.c -o $(BIN)/agente
+
+clean:
+	rm -f $(BIN)/controlador $(BIN)/agente
+
