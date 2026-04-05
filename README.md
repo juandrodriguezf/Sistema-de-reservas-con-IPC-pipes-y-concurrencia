@@ -123,4 +123,4 @@ Elimina los binarios en `bin/`. Los FIFOs creados en tiempo de ejecución pueden
 
 ## Autores y licencia
 
-Completar con nombres del equipo y la licencia o política de uso que corresponda al curso o al repositorio.
+Juan David Rodriguez
